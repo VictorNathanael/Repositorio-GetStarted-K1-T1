@@ -6,7 +6,6 @@ A quick reference guide for commonly used Git commands.
 
 -   `git config --global user.name "Your Name"`: Set your name for commits.
 -   `git config --global user.email "youremail@example.com"`: Set your email for commits.
--   `git config --global core.editor "code"`: Set your code editor for commit messages.
 
 ## Creating Repositories
 
@@ -34,7 +33,7 @@ A quick reference guide for commonly used Git commands.
 -   `git remote add origin <repository_url>`: Link your local repository to a remote repository.
 -   `git push -u origin <branch_name>`: Push your branch to the remote repository.
 -   `git pull`: Fetch and merge changes from the remote repository.
--   `git clone <repository_url>`: Clone a remote repository to your local machine.
+-   `git fetch`: Download changes from the remote repository without merging.
 
 ## History
 
@@ -48,21 +47,3 @@ A quick reference guide for commonly used Git commands.
 -   `git reset HEAD <file>`: Unstage changes of a specific file.
 -   `git checkout -- <file>`: Discard changes of a specific file in the working directory.
 -   `git revert <commit_hash>`: Create a new commit that undoes changes introduced by a specific commit.
-
-## Collaborating
-
--   `git fetch`: Download changes from the remote repository without merging.
--   `git pull`: Fetch and merge changes from the remote repository.
--   `git push`: Push your local commits to the remote repository.
-
-## Ignoring Files
-
--   Create a file named `.gitignore` in the root directory of your repository.
--   Add file patterns or directories to `.gitignore` to exclude them from version control.
-
-## Miscellaneous
-
--   `git help`: Get help with Git commands.
--   `git remote -v`: Show the URLs of the remote repositories.
--   `git diff`: View the differences between your working directory and staged changes.
--   `git diff HEAD`: View the differences between your working directory and the last commit.
